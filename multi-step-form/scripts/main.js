@@ -1,1 +1,1 @@
-console.log("NAME");
+const body = document.querySelector("body");
