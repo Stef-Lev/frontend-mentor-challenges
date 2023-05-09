@@ -11,6 +11,46 @@
   src: url("/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
 }
 
+/* CSS RESET */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* My style rocks */
+
 body {
   font-family: "UbuntuRegular", sans-serif;
   display: flex;
@@ -24,9 +64,33 @@ body {
 
 .container {
   width: 1200px;
-  height: 800px;
+  height: 700px;
   background-color: #fff;
   border-radius: 12px;
+  display: flex;
+  padding: 22px;
+}
+.steps-container {
+  border-radius: 12px;
+  flex-basis: 28%;
+  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.step-content {
+  background-color: rgb(232, 232, 232);
+  border-radius: 12px;
+  flex-basis: 72%;
+  padding: 66px 122px 22px;
+}
+
+.title {
+  font-size: large;
+  font-family: "UbuntuBold", sans-serif;
+  font-size: 36px;
+}
+.subtitle {
+  font-size: 20px;
 }
 
 .attribution {
